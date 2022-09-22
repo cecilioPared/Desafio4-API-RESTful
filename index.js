@@ -1,5 +1,5 @@
 const express = require("express");
-const productos = require("./routers/productos");
+const router = require("./routers");
 const app = express();
 const path = require("path");
 
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/api", productos);
+app.use("/api", router);
 
 const server = app.listen(PORT, () => {
   console.log(
