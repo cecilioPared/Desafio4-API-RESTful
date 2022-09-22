@@ -16,7 +16,7 @@ npm run dev
 
 ## Array de productos
 
-Se utiliza una constante inicializada con un producto al momento de ejecutar la aplicación
+Se utiliza una constante inicializada con un producto al momento de instanciar un objeto de la clase `Producto` que recibe como parametro un array.
 
 ## index.html
 
